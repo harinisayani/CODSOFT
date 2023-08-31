@@ -2,7 +2,7 @@ from tkinter import *
 import random
 window=Tk()
 window.title("ROCKPAPERSCISSOR")
-window.geometry("450x600")
+window.geometry("500x500")
 window.config(bg="lightblue")
 
 enter1=StringVar()
@@ -27,54 +27,26 @@ def Submit():
     enter1.set(" ")
     if my=='rock' and you=='scissor':
         score_user=score_user+1
-        label7=Label(window,text="user score").grid()
-        label4=Label(window,text=score_user).grid()
-        label5=Label(window,text="computer score").grid()
-        label6=Label(window,text=score_computer).grid()
         label3=Label(window,text="user wins").grid()
        
     elif my=='rock' and you=='paper':
         score_computer=score_computer+1
-        label7=Label(window,text="user score").grid()
-        label4=Label(window,text=score_user).grid()
-        label5=Label(window,text="computer score").grid()
-        label6=Label(window,text=score_computer).grid()
         label3=Label(window,text="computer wins").grid()
        
     elif my=='paper' and you=='rock':
         score_user=score_user+1
-        label7=Label(window,text="user score").grid()
-        label4=Label(window,text=score_user).grid()
-        label5=Label(window,text="computer score").grid()
-        label6=Label(window,text=score_computer).grid()
         label3=Label(window,text="user wins").grid()
     elif my=='paper' and you=='scissor':
         score_computer=score_computer+1
-        label7=Label(window,text="user score").grid()
-        label4=Label(window,text=score_user).grid()
-        label5=Label(window,text="computer score").grid()
-        label6=Label(window,text=score_computer).grid()
         label3=Label(window,text="computer wins").grid()
     elif my=='scissor' and you=='rock':
         score_computer=score_computer+1
-        label7=Label(window,text="user score").grid()
-        label4=Label(window,text=score_user).grid()
-        label5=Label(window,text="computer score").grid()
-        label6=Label(window,text=score_computer).grid()
         label3=Label(window,text="computer wins").grid()
     elif my=='scissor' and you=='paper':
         score_user=score_user+1
-        label7=Label(window,text="user score").grid()
-        label4=Label(window,text=score_user).grid()
-        label5=Label(window,text="computer score").grid()
-        label6=Label(window,text=score_computer).grid()
         label3=Label(window,text="user wins").grid()
     elif my==you:
         label3=Label(window,text="tie").grid()
-        label7=Label(window,text="user score").grid()
-        label4=Label(window,text=score_user).grid()
-        label5=Label(window,text="computer score").grid()
-        label6=Label(window,text=score_computer).grid()
     print("score_user",score_user)
     print("score_computer",score_computer)
 
