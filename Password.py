@@ -4,7 +4,7 @@ from tkinter import messagebox
 window=Tk()
 window.title("PASSWORD")
 window.geometry("600x400")
-window.configure(bg='grey')
+window.configure()
 passw=StringVar()
 def password():
     global my_pass
